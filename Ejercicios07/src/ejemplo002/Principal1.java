@@ -35,9 +35,11 @@ public class Principal1 {
                     promedio_paralelo);
             tipoNotas = funcion03(filaNotas);
             String correo = obtenerCorreo(nombre,apellido);
+            int notama= obtenerMa(filaNotas);
+            int notame = obtenerMe(filaNotas);
             mensajeFinal = String.format("%s%s\n", mensajeFinal, 
                     presentarReporte(nombre, apellido,correo, tipoNotas, 
-                    promedioEstudiante, numeroNotasArribaPromedio));
+                    promedioEstudiante, numeroNotasArribaPromedio,notama, notame));
             //se arma una adena y en el segundo parámetro se llama a una función
             //que llena la cadena automaticamente y se le manda la cadena a otra
             //función que va a llenar el archivo con la información.
@@ -47,15 +49,17 @@ public class Principal1 {
     }
     
     public static String presentarReporte(String nom, String ap,String correo, String notas, 
-            double prom, int numeroNotas){
+            double prom, int numeroNotas, int notama1,  int notame2){
         String reporte = String.format("Nombres: %s\n"
                 + "Apellidos: %s\n"
                 + "Username: %s\n"
                 + "Con notas: \n"
                 + "%s\n"
                 + "Promedio - %2f\n"
-                + "Número de notas arriba del promedio: %d\n\n",
-                nom, ap, correo, notas, prom, numeroNotas);
+                + "Número de notas arriba del promedio: %d\n\n"
+                + "Nota mayor: %d\n"
+                + "Nota menor: %d\n\n",
+                nom, ap, correo, notas, prom, numeroNotas, notama1,notame2);
         
         return reporte;
     }
@@ -67,6 +71,25 @@ public static String obtenerCorreo(String a, String b){
         
     
     return cadena;
+}
+public static int obtenerMa(int [] a){
+    int mayor = a[0];
+    for (int i = 0; i < a.length; i++) {
+        if (a[0] >mayor){
+            mayor = a[i];
+            }
+    }
+    
+    return mayor;
+}
+public static int obtenerMe(int [] a){
+    int menor = a[0];
+    for (int i = 0; i < a.length; i++) {
+        if (a[0] <menor){
+            menor = a[i];
+            }
+    }
+    return menor;
 }
     
     public static double obtenerPromedioParalelo(int [][] n){

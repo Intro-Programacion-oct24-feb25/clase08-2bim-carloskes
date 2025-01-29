@@ -10,6 +10,9 @@ Con notas:
 Promedio - 66,250000
 Número de notas arriba del promedio: 3
 
+Nota mayor: 10
+Nota menor: 10
+
 
 Nombres: Jonathan
 Apellidos: George
@@ -22,6 +25,9 @@ Con notas:
 
 Promedio - 61,250000
 Número de notas arriba del promedio: 2
+
+Nota mayor: 40
+Nota menor: 40
 
 
 Nombres: Kristen
@@ -36,6 +42,9 @@ Con notas:
 Promedio - 41,250000
 Número de notas arriba del promedio: 1
 
+Nota mayor: 80
+Nota menor: 80
+
 
 Nombres: Robin
 Apellidos: Cochran
@@ -48,6 +57,9 @@ Con notas:
 
 Promedio - 46,250000
 Número de notas arriba del promedio: 2
+
+Nota mayor: 70
+Nota menor: 70
 
 
 Nombres: Michelle
@@ -62,6 +74,9 @@ Con notas:
 Promedio - 63,750000
 Número de notas arriba del promedio: 3
 
+Nota mayor: 60
+Nota menor: 60
+
 
 Nombres: Emily
 Apellidos: Fletcher
@@ -74,6 +89,9 @@ Con notas:
 
 Promedio - 58,750000
 Número de notas arriba del promedio: 2
+
+Nota mayor: 50
+Nota menor: 50
 
 
 Nombres: Noah
@@ -88,6 +106,9 @@ Con notas:
 Promedio - 51,250000
 Número de notas arriba del promedio: 1
 
+Nota mayor: 40
+Nota menor: 40
+
 
 Nombres: Daniel
 Apellidos: Harris
@@ -100,6 +121,9 @@ Con notas:
 
 Promedio - 66,250000
 Número de notas arriba del promedio: 2
+
+Nota mayor: 30
+Nota menor: 30
 
 
 
