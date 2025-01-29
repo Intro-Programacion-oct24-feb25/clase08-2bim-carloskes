@@ -15,6 +15,7 @@ public class Principal1 {
         String [] apellidos = { "Lynch", "George", "Lang", "Cochran", "Young", "Fletcher", "Adkins", "Harris"};
         int [][] notas = { {10, 80, 80, 95}, {40, 80, 80, 45}, {80, 10, 20, 55}, {70, 30, 20, 65}, 
             {60, 50, 70, 75}, {50, 70, 30, 85},{40, 80, 40, 45}, {30, 90, 50, 95}};
+        String [] correos;
         
         double promedio_paralelo = obtenerPromedioParalelo(notas);
         String nombre;
@@ -28,12 +29,14 @@ public class Principal1 {
             nombre = nombres[i];
             apellido = apellidos[i];
             filaNotas = notas[i];
+            //String correo = correos[i];
             promedioEstudiante = funcion01(filaNotas);
             numeroNotasArribaPromedio = funcion02(filaNotas, 
                     promedio_paralelo);
             tipoNotas = funcion03(filaNotas);
+            String correo = obtenerCorreo(nombre,apellido);
             mensajeFinal = String.format("%s%s\n", mensajeFinal, 
-                    presentarReporte(nombre, apellido, tipoNotas, 
+                    presentarReporte(nombre, apellido,correo, tipoNotas, 
                     promedioEstudiante, numeroNotasArribaPromedio));
             //se arma una adena y en el segundo parámetro se llama a una función
             //que llena la cadena automaticamente y se le manda la cadena a otra
@@ -43,19 +46,28 @@ public class Principal1 {
 
     }
     
-    public static String presentarReporte(String nom, String ap, String notas, 
+    public static String presentarReporte(String nom, String ap,String correo, String notas, 
             double prom, int numeroNotas){
         String reporte = String.format("Nombres: %s\n"
                 + "Apellidos: %s\n"
+                + "Username: %s\n"
                 + "Con notas: \n"
                 + "%s\n"
                 + "Promedio - %2f\n"
                 + "Número de notas arriba del promedio: %d\n\n",
-                nom, ap, notas, prom, numeroNotas);
+                nom, ap, correo, notas, prom, numeroNotas);
         
         return reporte;
     }
-
+public static String obtenerCorreo(String a, String b){
+    a = a.toLowerCase();
+    b = b.toLowerCase();
+    a = a.substring(0,1);
+    String cadena= a +"."+b+"@utpl.edu.ec";
+        
+    
+    return cadena;
+}
     
     public static double obtenerPromedioParalelo(int [][] n){
         int suma = 0;
@@ -124,3 +136,4 @@ public class Principal1 {
     
     
 }
+

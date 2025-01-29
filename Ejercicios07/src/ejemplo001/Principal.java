@@ -20,11 +20,13 @@ public class Principal {
             {70, 30, 20, 65}, 
             {60, 50, 70, 75}, {50, 70, 30, 85},{40, 80, 40, 45}, {30, 90, 50,
                 95}};
+        String [] correo1;
         
         double promedio_paralelo = obtenerPromedioParalelo(notas);
         String nombre;
         String apellido;
         String tipoNotas;
+        String correo;
         double promedioEstudiante;
         int numeroNotasArribaPromedio;
         int [] filaNotas;
