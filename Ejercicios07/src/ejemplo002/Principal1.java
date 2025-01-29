@@ -35,6 +35,9 @@ public class Principal1 {
             mensajeFinal = String.format("%s%s\n", mensajeFinal, 
                     presentarReporte(nombre, apellido, tipoNotas, 
                     promedioEstudiante, numeroNotasArribaPromedio));
+            //se arma una adena y en el segundo parámetro se llama a una función
+            //que llena la cadena automaticamente y se le manda la cadena a otra
+            //función que va a llenar el archivo con la información.
         }
         CrearArchivoTexto.agregarRegistros(mensajeFinal);
 
